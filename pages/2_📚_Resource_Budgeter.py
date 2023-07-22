@@ -47,8 +47,6 @@ if appliance:
 
 spent = count[0][0] / 1000 * (hours + (minutes/60))
 spent = round(spent, 2)
-remaining = daily_limit - st.session_state.count
-remaining = round(remaining, 2)
 st.write("Expenditure: ", spent, "`kwh`")
 
 b1, b2, b3 = st.columns([1, 1, 2], gap="small")
@@ -68,7 +66,7 @@ with r1:
 with r2: 
     st.write("Total Spent: ", round(st.session_state.count, 2), "`kwh`")
 with r3:
-    st.write("Remaining: ", remaining, "`kwh`")
+    st.write("Remaining: ", round(daily_limit - st.session_state.count, 2), "`kwh`")
 
-if remaining < 0:
+if daily_limit < st.session_state.count:
     st.error("You're over your daily limit! Refer to our [Habit Tracker](./Habit_Tracker) to identify appliances that consume the most energy.")
