@@ -3,6 +3,8 @@ import pandas as pd
 
 if 'count' not in st.session_state:
     st.session_state.count = 0
+if 'appliance' not in st.session_state:
+    st.session_state.appliance = []
 
 st.set_page_config(
     page_icon=":books:",
@@ -55,10 +57,15 @@ with b1:
 with b2:
     clear = st.button("Clear Budget")
 
-if add:
+if add and (hours != 0 or minutes != 0):
     st.session_state.count += spent
+    appliances = []
+    appliances.append(df_search["Appliance"].to_numpy(dtype=str)[0])
+    appliances.append(spent)
+    st.session_state.appliance.append(appliances)
 if clear:
     st.session_state.count = 0
+    st.session_state.appliance = []
 
 r1, r2, r3, r4 = st.columns([1, 1, 1, 1], gap="small")
 with r1: 
