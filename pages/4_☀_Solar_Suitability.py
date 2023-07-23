@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_icon=":sun:",
+    page_icon=":sunny:",
     page_title="App",
     layout="wide",
 )
