@@ -16,7 +16,7 @@ st.header("Resource Budgeter")
 st.markdown("The Resource Budgeter falls under the **Habitual** and **Awareness** categories of Green IoT Techniques", help="[Green IoT: An Investigation on Energy Saving Practices for 2020 and Beyond](https://www.researchgate.net/publication/318797858_Green_IoT_An_Investigation_on_Energy_Saving_Practices_for_2020_and_Beyond)")
 st.markdown("This component creates a resource budget according to your household needs. It combines concepts like Habit Tracking and Smart Metering to help you identify the most significant areas of energy consumption, and suggests suitable conservation measures. The below metrics are taken from a study on [US households](https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php) and [Generatorist](https://generatorist.com/list-of-electric-appliances-their-wattage-usage).")
 
-monthly_budget = st.slider("Monthly Budget", min_value=200, max_value=1500, step=50, format=None, key=None, help="in kilowatthours (kWH)", on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
+monthly_budget = st.slider("Monthly Budget", min_value=200, max_value=2500, step=50, format=None, key=None, help="in kilowatthours (kWH)", on_change=None, args=None, kwargs=None, disabled=False, label_visibility="visible")
 daily_limit = monthly_budget//31
 
 sheet_name = "Appliance_Electricity_Budget"
@@ -77,3 +77,5 @@ with r3:
 
 if daily_limit < st.session_state.count:
     st.error("You're over your daily limit! Refer to our [Habit Tracker](./Habit_Tracker) to identify appliances that consume the most energy.")
+if st.session_state.count > 500:
+    st.success("Check out [Solar Suitability](./Solar_Suitability) to see if solar panels are a good fit for your home.")

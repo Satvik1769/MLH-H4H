@@ -25,6 +25,8 @@ if 'appliance' not in st.session_state or not st.session_state.appliance:
         st.altair_chart(c, use_container_width=True)
     with c2:
         st.line_chart(df, x='Appliance_ID', y='Expenditure', use_container_width=True)
+    
+    st.write("Appliance with max usage: ", df['Expenditure'].idxmax(), " with", round(df['Expenditure'].max(), 2), "`kwh`")
 
 else:
     df = pd.DataFrame(st.session_state.appliance, columns=['Appliances', 'Expenditure'])
@@ -34,3 +36,5 @@ else:
         st.altair_chart(c, use_container_width=True)
     with c2:
         st.line_chart(df, x='Appliances', y='Expenditure', use_container_width=True)
+
+    st.write("Appliance with max usage: `", df['Appliances'][df['Expenditure'].idxmax()], "` with", round(df['Expenditure'].max(), 2), "`kwh`")
