@@ -17,11 +17,11 @@ with a1:
     rb = st.button("Resource Budgeter", type="primary", use_container_width=True)
     ht = st.button("Habit Tracker", type="primary", use_container_width=True)
     ss = st.button("Solar Suitability", type="primary", use_container_width=True)
-    # bx = st.button("Best of X", type="primary", use_container_width=True)
+    bx = st.button("Best of X", type="primary", use_container_width=True)
     lp = st.button("🤫 Extra: Landing Page", use_container_width=True)
 
 with a2:
-    if not rb and not ht and not ss or (lp):
+    if not rb and not ht and not ss and not bx or (lp):
         st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/carbon_footprint.png?raw=true", caption="Carbon Footprint - Photo by Evie S.")
     if rb:
         st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/esource_budgeter.png?raw=true", caption="Resource Budgeter - Photo by Daniel Norris")
@@ -29,6 +29,8 @@ with a2:
         st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/habit_tracker.png?raw=true", caption="Habit Tracker - Photo by Kelly Sikkema")
     if ss:
         st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/solar_suitability.png?raw=true", caption="Solar Suitability - Photo by Manny Becerra")
+    if bx:
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/of_x.png?raw=true", caption="Best of X - Photo by Peter Broomfield")
 
 if rb:
     ht = ss = bx = lp = False
@@ -112,6 +114,40 @@ if ss:
             - While coding this, I figured out how to convey requirements without taking up too much space
             - I wanted to structure it in such a way that the user only needed to see the warnngs that were applicable to them
             - I also wanted to make it informative as possible without being too verbose, so I added extra information below the warning messages
+        """)
+    st.markdown("👈 Check out the final result in the sidebar!")
+    
+
+if bx:
+    rb = ht = ss = lp = False
+
+    st.subheader("Best of X")
+    st.markdown("This is Best of X")
+
+    image, text = st.columns([1, 2], gap="large")
+    with image:
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/design.png?raw=true", caption="Figma Wireframe")
+    with text:
+        st.markdown("""
+            ### Design
+            - A
+            - B
+            - C
+                - D
+                - E
+        """)
+
+    text, image = st.columns([2, 1], gap="large")
+    with image:
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/code.png?raw=true", caption="Screenshot of VSCode")
+    with text:
+        st.markdown("""
+            ### Code
+            - A
+            - B
+            - C
+                - D
+                - E
         """)
     st.markdown("👈 Check out the final result in the sidebar!")
 
