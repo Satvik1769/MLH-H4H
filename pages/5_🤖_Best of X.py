@@ -38,7 +38,7 @@ sheet_name = "data"
 sheet_id = "1IN1YCm8DcLIgxY73ZmakN8m3SplYv8wb"
 url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
 
-df = pd.read_csv(url, dtype=str)
+df = pd.read_csv(url)
 
 def foo():
 
