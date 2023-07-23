@@ -22,15 +22,15 @@ with a1:
 
 with a2:
     if not rb and not ht and not ss and not bx or (lp):
-        st.image("assets\carbon_footprint.png", caption="Carbon Footprint - Photo by Evie S.")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/carbon_footprint.png?raw=true", caption="Carbon Footprint - Photo by Evie S.")
     if rb:
-        st.image("assets\esource_budgeter.png", caption="Resource Budgeter - Photo by Daniel Norris")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/esource_budgeter.png?raw=true", caption="Resource Budgeter - Photo by Daniel Norris")
     if ht:
-        st.image("assets\habit_tracker.png", caption="Habit Tracker - Photo by Kelly Sikkema")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/habit_tracker.png?raw=true", caption="Habit Tracker - Photo by Kelly Sikkema")
     if ss:
-        st.image("assets\solar_suitability.png", caption="Solar Suitability - Photo by Manny Becerra")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/solar_suitability.png?raw=true", caption="Solar Suitability - Photo by Manny Becerra")
     if bx:
-        st.image("assets\of_x.png", caption="Best of X - Photo by Peter Broomfield")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/of_x.png?raw=true", caption="Best of X - Photo by Peter Broomfield")
 
 if rb:
     ht = ss = bx = lp = False
@@ -38,7 +38,7 @@ if rb:
 
     image, text = st.columns([1, 2], gap="large")
     with image:
-        st.image("assets\w\design.png", caption="Figma Wireframe")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/w/design.png?raw=true", caption="Figma Wireframe")
     with text:
         st.markdown("""
             ### Design
@@ -50,7 +50,7 @@ if rb:
 
     text, image = st.columns([2, 1], gap="large")
     with image:
-        st.image("assets\w\code.png", caption="Screenshot of VSCode")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/w/code.png?raw=true", caption="Screenshot of VSCode")
     with text:
         st.markdown("""
             ### Code
@@ -67,7 +67,7 @@ if ht:
 
     image, text = st.columns([1, 2], gap="large")
     with image:
-        st.image("assets\c\design.png", caption="Figma Wireframe")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/c/design.png?raw=true", caption="Figma Wireframe")
     with text:
         st.markdown("""
             ### Design
@@ -79,7 +79,7 @@ if ht:
 
     text, image = st.columns([2, 1], gap="large")
     with image:
-        st.image("assets\c\code.png", caption="Screenshot of VSCode")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/c/code.png?raw=true", caption="Screenshot of VSCode")
     with text:
         st.markdown("""
             ### Code
@@ -95,7 +95,7 @@ if ss:
 
     image, text = st.columns([1, 2], gap="large")
     with image:
-        st.image("assets\y\design.png", caption="Figma Wireframe")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/y/design.png?raw=true", caption="Figma Wireframe")
     with text:
         st.markdown("""
             ### Design
@@ -107,7 +107,7 @@ if ss:
 
     text, image = st.columns([2, 1], gap="large")
     with image:
-        st.image("assets\y\code.png", caption="Screenshot of VSCode")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/y/code.png?raw=true", caption="Screenshot of VSCode")
     with text:
         st.markdown("""
             ### Code
@@ -126,7 +126,7 @@ if bx:
 
     image, text = st.columns([1, 2], gap="large")
     with image:
-        st.image("assets\lp\design.png", caption="Figma Wireframe")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/design.png?raw=true", caption="Figma Wireframe")
     with text:
         st.markdown("""
             ### Design
@@ -139,7 +139,7 @@ if bx:
 
     text, image = st.columns([2, 1], gap="large")
     with image:
-        st.image("assets\lp\code.png", caption="Screenshot of VSCode")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/code.png?raw=true", caption="Screenshot of VSCode")
     with text:
         st.markdown("""
             ### Code
@@ -159,7 +159,7 @@ if lp:
 
     image, text = st.columns([1, 2], gap="large")
     with image:
-        st.image("assets\lp\design.png", caption="Figma Wireframe")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/design.png?raw=true", caption="Figma Wireframe")
     with text:
         st.markdown("""
             ### Design
@@ -170,7 +170,7 @@ if lp:
 
     text, image = st.columns([2, 1], gap="large")
     with image:
-        st.image("assets\lp\code.png", caption="Screenshot of VSCode")
+        st.image("https://github.com/Akshu-on-github/MLH-H4H/blob/main/assets/lp/code.png?raw=true", caption="Screenshot of VSCode")
     with text:
         st.markdown("""
             ### Code
