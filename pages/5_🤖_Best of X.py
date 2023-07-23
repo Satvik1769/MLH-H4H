@@ -4,11 +4,11 @@ import pandas as pd
 
 st.set_page_config(
     page_icon="🤖",
-    page_title="Dream Car",
+    page_title="Best of X",
     layout="wide",
 )
-st.header("Dream Car")
-st.markdown("Dream Car falls under **Awareness** category of Automobiles Industry. ",help="[Press Information Bureau Ministry of Information and Broadcasting  Government of India](https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/feb/doc2023217160601.pdf)")
+st.header("Best of X")
+st.markdown("Best of X falls under **Awareness** category of Automobiles Industry. ",help="[Press Information Bureau Ministry of Information and Broadcasting  Government of India](https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/feb/doc2023217160601.pdf)")
 st.markdown("Every Car is amazing in it's own way some has great mileage or some has great power. Dream Car provides you a platform where you can find which car is suitable for your needs you can compare cars and choose your Dream Car. The below metrices are taken from study from [Automobile application](https://www.auto-data.net/en/)")
 
 feul_types = ["CNG","Electric","Petrol","Diesel"]
